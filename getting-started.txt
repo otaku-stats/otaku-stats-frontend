@@ -1,0 +1,11 @@
+Steps to make this work:
+
+1. download Node JS https://nodejs.org/en/download/ under the LTS (long term support) tab
+
+2. clone or download our react-starter kit, which holds the bare bones of what we need to run a React/Redux application (built by our very own Jake Hackett) https://github.com/carbonblack/react-starter
+
+3. To be able to request weather data, create a free account with https://openweathermap.org/ and get an API key (so you can request data from their API)
+4. Go to your shell of choice (Terminal/Bash/Command Prompt) and cd into the place where you saved the starter kit
+5. From that shell, run >npm install to download all packages (mentioned in video)
+6. Run >npm start to see our bare-bones application running at http://localhost:8080 (note: not https). Now we're running!
+

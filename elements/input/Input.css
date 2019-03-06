@@ -1,0 +1,9 @@
+.input {
+    border-radius: 1rem;
+    padding: .4rem;
+    width: 15rem;
+}
+
+.input.fullWidth {
+    width: 100%;
+}

@@ -45,7 +45,7 @@ module.exports = {
                 use: ['babel-loader'],
             },
             {
-                test: /\.(png|svg)$/,
+                test: /\.(png|svg|jpg|gif)$/,
                 include: path.join(paths.SRC),
                 use: [
                     {
@@ -58,6 +58,12 @@ module.exports = {
                 test: /\.css$/,
                 include: path.join(paths.SRC),
                 use: ['style-loader','css-loader']
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                 use: [
+                  'file-loader'
+                ]
             }
         ],
     },
@@ -66,4 +72,5 @@ module.exports = {
             template: path.join(paths.SRC, 'index.html'),
         })
     ],
+    devtool: 'source-map'
 }

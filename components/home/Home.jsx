@@ -1,24 +1,48 @@
 import React, { Component } from 'react'
-import { getWeather } from '../../actions/home.js'
 import { connect } from 'react-redux';
+import './Home.css';
+import Input from '../../elements/input/Input';
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            searchString: ''
+        }
+    }
 
-    getWeatherData() {
-        this.props.dispatch(getWeather());
+    handleInputChange(name, value) {
+        this.setState({
+            [name]: value
+        });
+    }
+
+    searchAnime() {
+
     }
 
     render() {
-        const { weatherData } = this.props;
+        const { searchString } = this.state;
 
         return (
-            <div>
-                <p>hello world</p>
-                <button onClick={ () => this.getWeatherData() }>
-                    Request weather data
-                </button>
-                { weatherData && weatherData.main.temp }
-
+            <div className="landing">
+                <div className="heading">
+                    <h1>Otaku Stats</h1>
+                    <h2>Search for specific anime and trends</h2>
+                </div>
+                <form className="search-form">
+                    <div className="left-form-elements">
+                        <Input
+                            autoFocus
+                            value={ searchString }
+                            placeholder="Search..."
+                            onChange={ e => this.handleInputChange('searchString', e.target.value) }
+                            fullWidth
+                        />
+                    </div>
+                    <div className="right-form-elements">
+                    </div>
+                </form>
             </div>
         );
     }

@@ -1,0 +1,39 @@
+/*------------ fonts ------------*/
+@font-face {
+    font-family: "Delicious";
+    src: url("./fonts/darrell-flood_delicious/Delicious.otf");
+}
+@font-face {
+    font-family: "Metropolis regular";
+    src: url("./fonts/metropolis/Metropolis-Regular.otf");
+}
+
+/*------------ headings ------------*/
+.heading {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    font-family: "Delicious", "Arial";
+}
+
+.heading h1 {
+    font-size: 11rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+.heading h2 {
+    font-size: 2.3rem;
+}
+
+/*------------- media queries -------------*/
+/* for changing window size */
+/* GO FULL WIDTH AT LESS THAN 800 PIXELS */
+@media only screen and (max-width: 800px) {
+    .heading h1 {
+        font-size: 5rem;
+    }
+    .heading h2 {
+        font-size: 1.3rem;
+    }
+}

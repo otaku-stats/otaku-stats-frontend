@@ -2,14 +2,29 @@
     border-radius: 1rem;
     padding: .4rem 1rem;
     width: 15rem;
+    font-family: "Metropolis regular", "Arial";
 }
 
 .input.fullWidth {
     width: 100%;
 }
 
+/* when a search icon is in the input, add extra right padding so that text can't overflow onto the icon */
+.input.room-for-search-icon {
+    padding-right: 2.5rem;
+}
+
+.input.minimal {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px #8b8b8b solid;
+}
+
+.input:focus {
+    outline: 0;
+}
+
 .search-click-area {
-    vertical-align: middle;
     margin-left: -3rem;
     width: 3rem;
     padding: .4rem 1rem;
@@ -21,4 +36,8 @@
     cursor: pointer;
     transition:color .3s linear;
     color: blue;
+}
+
+.search-click-area .search-icon {
+    vertical-align: middle;
 }

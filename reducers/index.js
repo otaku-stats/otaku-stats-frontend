@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux'
-import home from 'reducers/home'
+import { combineReducers } from 'redux';
+import stats from 'reducers/stats';
 
 const reducers = combineReducers({
-    home
-})
+    stats
+});
   
-export default reducers
+export default reducers;

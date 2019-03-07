@@ -1,5 +1,21 @@
 .button {
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 1rem;
-    padding: .3rem .7rem;
+    padding: .5rem .9rem;
+    font-family: "Metropolis", "Arial";
+    font-weight: bold;
+    color: hotpink;
+    border: 1px hotpink solid;
+}
+.button.type-primary {
+    background-color: hotpink;
+    color: white;
+    border: none;
+}
+.button:focus {
+    outline: 0;
+}
+
+.button:hover {
+    cursor: pointer;
 }

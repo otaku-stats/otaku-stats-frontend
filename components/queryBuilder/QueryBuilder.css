@@ -1,0 +1,72 @@
+.search-form {
+    width: 70%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    max-width: 40rem;
+    margin: auto;
+}
+
+.expression {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.column-select {
+    width: 100%;
+}
+
+.add-remove-icons {
+    margin-left: 1rem;
+    width: 8rem;
+}
+
+.add-remove-icons a {
+    color: hotpink;
+    margin-right: .4rem;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+/*------------- operators -------------*/
+.operator {
+    font-size: .8rem;
+    padding-right: .4rem;
+    vertical-align: bottom;
+    color: #8b8b8b;
+}
+
+.operator.active {
+    font-weight: bold;
+    color: hotpink;
+}
+
+.operator.active:hover {
+    cursor: default;
+}
+
+.operator.inactive:hover {
+    cursor: pointer;
+}
+
+/*------------- search and cancel buttons -------------*/
+.form-actions {
+    text-align: right;
+}
+
+.form-actions Button {
+    margin-right: .4rem;
+}
+
+/*------------- media queries -------------*/
+/* for changing window size */
+/* GO FULL WIDTH AT LESS THAN 800 PIXELS */
+@media only screen and (max-width: 800px) {
+    .search-form {
+        width: 98%;
+    }
+}

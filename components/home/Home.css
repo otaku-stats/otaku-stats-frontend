@@ -14,23 +14,24 @@ body {
 .landing .heading {
     text-align: center;
     color: white;
-    margin: 2rem auto 0 auto;
+    margin: 0 auto;
     font-family: "Delicious", "Arial";
 }
 
 .landing .heading h1 {
     font-size: 11rem;
     margin-bottom: 0;
+    margin-top: 3rem;
 }
 
 .landing .heading h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 /*------------- form styles -------------*/
 .search-form {
-    width: 80%;
-    max-width: 50rem;
+    width: 70%;
+    max-width: 40rem;
     margin: auto;
 }
 

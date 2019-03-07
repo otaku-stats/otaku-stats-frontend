@@ -1,9 +1,24 @@
 .input {
     border-radius: 1rem;
-    padding: .4rem;
+    padding: .4rem 1rem;
     width: 15rem;
 }
 
 .input.fullWidth {
     width: 100%;
+}
+
+.search-click-area {
+    vertical-align: middle;
+    margin-left: -3rem;
+    width: 3rem;
+    padding: .4rem 1rem;
+    color: hotpink;
+    transition:color .3s linear;
+}
+
+.search-click-area:hover {
+    cursor: pointer;
+    transition:color .3s linear;
+    color: blue;
 }

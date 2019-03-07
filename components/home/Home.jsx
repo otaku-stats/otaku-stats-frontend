@@ -38,6 +38,8 @@ class Home extends Component {
                             placeholder="Search..."
                             onChange={ e => this.handleInputChange('searchString', e.target.value) }
                             fullWidth
+                            searchButton
+                            onSearchClick={ () => this.searchAnime() }
                         />
                     </div>
                     <div className="right-form-elements">

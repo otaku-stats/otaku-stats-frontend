@@ -27,7 +27,7 @@
 }
 
 .input:focus {
-    outline: 0;
+    outline: 1px hotpink solid;
 }
 
 .search-click-area {

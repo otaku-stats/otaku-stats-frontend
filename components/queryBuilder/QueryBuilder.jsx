@@ -6,6 +6,7 @@ import { faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 import './QueryBuilder.css';
 import Input from '../../elements/input/Input';
 import Button from '../../elements/button/Button';
+import Select from '../../elements/select/Select';
 
 const OperatorConstants = {
     AND: 'AND',
@@ -14,24 +15,35 @@ const OperatorConstants = {
 
 const queryColumns = [
     {
-        name: 'Name',
+        label: 'Name',
+        value: 'Name',
         data_type: 'string'
     },
     {
-        name: 'Description',
+        label: 'Description',
+        value: 'Description',
         data_type: 'string'
     },
     {
-        name: 'Genre',
+        label: 'Genre',
+        value: 'Genre',
         data_type: 'string'
     },
     {
-        name: 'Release Date',
+        label: 'Release Date',
+        value: 'Release Date',
         data_type: 'date'
     },
     {
-        name: 'Rating',
+        label: 'Min. rating',
+        value: 'Min. rating',
         data_type: 'number'
+    },
+    {
+        label: 'Type',
+        value: 'Type',
+        options: ['TV', 'Movie'], //TODO implement an options dropdown if any column has options
+        data_type: 'string'
     }
 ];
 
@@ -63,7 +75,7 @@ class QueryBuilder extends Component {
         expressions[expressionIndex][propName] = value;
 
         if (propName === 'l_operand') {
-            expressions[expressionIndex].data_type = queryColumns.find(col => value === col.name).data_type;
+            expressions[expressionIndex].data_type = queryColumns.find(col => value === col.value).data_type;
         }
 
         this.setState({
@@ -103,24 +115,15 @@ class QueryBuilder extends Component {
                     return (
                         <Fragment key={ 'col-' + index }>
                         <div className="form-row">
-                            <select
-                                onChange={ e => this.handleExpressionInputChange(e.target.value, 'l_operand', index) }
-                                defaultValue="Add criteria"
-                            >
-                                <option value="Add criteria" disabled hidden>Add criteria</option>
-                                { queryColumns.map((column, index) => {
-                                    return (
-                                        <option
-                                            className="option"
-                                            key={ 'option-' + index }
-                                            value={ column.name }
-                                        >
-                                            { column.name }
-                                        </option>
-                                    )})
-                                }
-                            </select>
-                            <div className="form-input">
+                            <div className="select-container">
+                                <Select
+                                    options={ queryColumns }
+                                    onChange={ e => this.handleExpressionInputChange(e.target.value, 'l_operand', index) }
+                                    defaultValue="Add criteria"
+                                    fullWidth
+                                />
+                            </div>
+                            <div className="input-container">
                                 <Input
                                     disabled={ expression.l_operand === '' }
                                     fullWidth

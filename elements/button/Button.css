@@ -13,7 +13,7 @@
     border: none;
 }
 .button:focus {
-    outline: 0;
+    outline: 1px hotpink solid;
 }
 
 .button:hover {

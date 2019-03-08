@@ -1,0 +1,21 @@
+/* reference for changing arrow in the future:
+   https://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-only-css */
+.select {
+    font-family: "Metropolis", "Arial";
+    color: #7d7d7d;
+    padding: 0 .5rem;
+    width: 15rem;
+    max-width: 15rem;
+}
+
+.select .option {
+    color: #7d7d7d;
+}
+
+.select:focus {
+    outline: 1px hotpink solid;
+}
+
+.select.full-width {
+    width: 100%;
+}

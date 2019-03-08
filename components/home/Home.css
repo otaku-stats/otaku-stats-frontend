@@ -1,8 +1,12 @@
-body {
-    margin: 0;
-    overflow:auto;
+.landing {
+    flex-grow: 1;
     background-image: url("../../resources/pics/kiminonawa2.jpg");
     background-size: cover;
     background-color: blue;
     font-family: "Metropolis regular", "Arial";
+}
+
+.landing .heading {
+    text-align: center;
+    margin: 0 auto;
 }

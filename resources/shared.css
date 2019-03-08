@@ -1,3 +1,14 @@
+body {
+    margin: 0;
+    overflow: auto;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 /*------------ fonts ------------*/
 @font-face {
     font-family: "Delicious";
@@ -10,16 +21,14 @@
 
 /*------------ headings ------------*/
 .heading {
-    text-align: center;
     color: white;
-    margin: 0 auto;
     font-family: "Delicious", "Arial";
 }
 
 .heading h1 {
     font-size: 11rem;
-    margin-bottom: 0;
-    margin-top: 3rem;
+    text-align: center;
+    margin: 3rem auto 0 auto;
 }
 
 .heading h2 {

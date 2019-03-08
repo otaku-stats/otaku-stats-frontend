@@ -1,0 +1,50 @@
+nav {
+    background-color: hotpink;
+    width: calc(100vw - 2rem);
+    padding: 0 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+nav h2{
+    text-align: left;
+    margin: .5rem 0;
+}
+
+nav .link {
+    color: white;
+    text-decoration: none;
+}
+
+nav .little-links {
+    vertical-align: bottom;
+    line-height: 3;
+}
+
+nav .little-links span {
+    margin-left: .3rem;
+}
+
+nav .little-links .link:hover {
+    color: blue;
+    transition:color .2s linear;
+}
+
+nav .little-links .link {
+    margin-left: 2rem;
+    color: white;
+    transition:color .2s linear;
+    font-size: 1.2rem;
+}
+
+/*------------- media queries -------------*/
+/* for changing window size */
+/* GO FULL WIDTH AT LESS THAN 800 PIXELS */
+@media only screen and (max-width: 800px) {
+    nav .little-links {
+        vertical-align: bottom;
+        line-height: 2.1;
+    }
+}

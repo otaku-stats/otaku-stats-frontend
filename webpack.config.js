@@ -1,15 +1,15 @@
-const path = require('path')
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const paths = {
     DIST: path.resolve(__dirname, 'dist'),
     SRC: path.resolve(__dirname),
-}
+};
 
 const proxyUrls = {
     API: 'http://localhost:80'
-}
+};
 
 module.exports = {
     entry: {
@@ -23,7 +23,8 @@ module.exports = {
             ],
             target: proxyUrls.API, 
             secure: false
-        }]
+        }],
+        historyApiFallback: true  // https://stackoverflow.com/questions/43209666/react-router-v4-cannot-get-url
     },
     resolve: {
         extensions: ['.js', '.jsx'],
@@ -34,6 +35,7 @@ module.exports = {
     },
     output: {
         path: paths.DIST,
+        publicPath: '/', // https://stackoverflow.com/questions/43209666/react-router-v4-cannot-get-url
         filename: 'app.bundle.js',
     },
     module: {
@@ -73,4 +75,4 @@ module.exports = {
         })
     ],
     devtool: 'source-map'
-}
+};

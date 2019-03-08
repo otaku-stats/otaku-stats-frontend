@@ -1,6 +1,6 @@
-.stats-wrapper {
+.about-wrapper {
     flex-grow: 1;
-    background-image: url("../../resources/pics/kiminonawa3.jpg");
+    background-image: url("../../resources/pics/kiminonawa.jpg");
     background-size: cover;
     background-color: blue;
     font-family: "Metropolis regular", "Arial";

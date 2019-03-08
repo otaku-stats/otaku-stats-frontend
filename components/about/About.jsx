@@ -1,13 +1,13 @@
 import React  from 'react'
-import './Stats.css';
+import './About.css';
 import '../../resources/shared.css';
 
-const Stats = () => (
-    <div className="stats-wrapper">
+const About = () => (
+    <div className="about-wrapper">
         <div className="heading">
-            <h1>Stats</h1>
+            <h1>About</h1>
         </div>
     </div>
 );
 
-export default Stats;
+export default About;

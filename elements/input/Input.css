@@ -3,10 +3,15 @@
     padding: .4rem 1rem;
     width: 15rem;
     font-family: "Metropolis regular", "Arial";
+    color: #7d7d7d;
 }
 
 .input.fullWidth {
     width: 100%;
+}
+
+.input:disabled {
+    background-color: #e9e9e9;
 }
 
 /* when a search icon is in the input, add extra right padding so that text can't overflow onto the icon */
@@ -17,7 +22,8 @@
 .input.minimal {
     border: none;
     border-radius: 0;
-    border-bottom: 1px #8b8b8b solid;
+    border-bottom: 1px #d7d7d7 solid;
+    padding: .4rem;
 }
 
 .input:focus {

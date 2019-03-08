@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -87,7 +87,6 @@ class QueryBuilder extends Component {
     }
 
     clearForm() {
-        //TODO implement this
         this.setState(initialState);
     }
 
@@ -102,25 +101,26 @@ class QueryBuilder extends Component {
             <form className="search-form">
                 { expressions.map((expression, index) => {
                     return (
-                        <div key={ 'col-' + index } className="form-row">
-                            <div className="expression">
-                                <select
-                                    className="column-select"
-                                    onChange={ e => this.handleExpressionInputChange(e.target.value, 'l_operand', index) }
-                                    defaultValue="Add criteria"
-                                >
-                                    <option value="Add criteria" disabled hidden>Add criteria</option>
-                                    { queryColumns.map((column, index) => {
-                                        return (
-                                            <option
-                                                key={ 'option-' + index }
-                                                value={ column.name }
-                                            >
-                                                { column.name }
-                                            </option>
-                                        )})
-                                    }
-                                </select>
+                        <Fragment key={ 'col-' + index }>
+                        <div className="form-row">
+                            <select
+                                onChange={ e => this.handleExpressionInputChange(e.target.value, 'l_operand', index) }
+                                defaultValue="Add criteria"
+                            >
+                                <option value="Add criteria" disabled hidden>Add criteria</option>
+                                { queryColumns.map((column, index) => {
+                                    return (
+                                        <option
+                                            className="option"
+                                            key={ 'option-' + index }
+                                            value={ column.name }
+                                        >
+                                            { column.name }
+                                        </option>
+                                    )})
+                                }
+                            </select>
+                            <div className="form-input">
                                 <Input
                                     disabled={ expression.l_operand === '' }
                                     fullWidth
@@ -128,25 +128,25 @@ class QueryBuilder extends Component {
                                     value={ expression.r_operand }
                                     minimal
                                 />
-                                <div className="add-remove-icons">
-                                    { expressions.length > 1 &&
-                                        <a onClick={ () => this.addOrRemoveExpression('remove', index) }>
-                                            <FontAwesomeIcon icon={ faMinusCircle } />
-                                        </a>
-                                    }
-                                    {/* offer option to add another expression at the last expression */}
-                                    { index === expressions.length - 1  &&
-                                        <a onClick={ () => this.addOrRemoveExpression('add', index) }>
-                                            <FontAwesomeIcon icon={ faPlusCircle } />
-                                        </a>
-                                    }
-                                </div>
+                            </div>
+                            <div className="add-remove-icons">
+                                { expressions.length > 1 &&
+                                    <a onClick={ () => this.addOrRemoveExpression('remove', index) }>
+                                        <FontAwesomeIcon icon={ faMinusCircle } />
+                                    </a>
+                                }
+                                {/* offer option to add another expression at the last expression */}
+                                { index === expressions.length - 1  &&
+                                    <a onClick={ () => this.addOrRemoveExpression('add', index) }>
+                                        <FontAwesomeIcon icon={ faPlusCircle } />
+                                    </a>
+                                }
                             </div>
                             {/*show AND/OR operator options only if there is more than one expression */}
                             { index === 0 && expressions.length > 1 &&
-                                <div className="operator-change">
+                                <div className="operator-switch">
                                     <a
-                                        className={ classNames('operator', operator === OperatorConstants.AND ? 'active' : 'inactive') }
+                                        className={ classNames('operator first-option', operator === OperatorConstants.AND ? 'active' : 'inactive') }
                                         onClick={ () => this.setState({ operator: OperatorConstants.AND }) }
                                     >
                                         { OperatorConstants.AND }
@@ -159,13 +159,15 @@ class QueryBuilder extends Component {
                                     </a>
                                 </div>
                             }
-                            {/*show the selected operator between expressions after the first one */}
-                            { index >= 1 && index !== expressions.length - 1 &&
-                                <span className="operator active">
-                                    { operator }
-                                </span>
-                            }
+
                         </div>
+                        {/*show the selected operator between expressions after the first one */}
+                        { index >= 0 && index !== expressions.length - 1 &&
+                            <div className="operator active operator-between">
+                                { operator }
+                            </div>
+                        }
+                        </Fragment>
                     );
                 }) }
                 <div className="form-actions">

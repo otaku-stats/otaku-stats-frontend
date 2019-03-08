@@ -1,22 +1,41 @@
 .search-form {
-    width: 70%;
+    width: 68%;
     background-color: white;
     padding: 2rem;
     border-radius: 2rem;
-    max-width: 40rem;
+    max-width: 38rem;
     margin: auto;
 }
 
-.expression {
+.form-row {
+    margin: .6rem 0;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
 }
 
-.column-select {
+.form-input {
+    margin-left: .8rem;
     width: 100%;
+    max-width: 15rem;
+    min-width: 10rem;
 }
 
+/*------------- select -------------*/
+/* reference for changing arrow in the future:
+   https://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-only-css */
+.search-form select {
+    font-family: "Metropolis", "Arial";
+    color: #7d7d7d;
+    padding: 0 .5rem;
+    width: 100%;
+    max-width: 10rem;
+}
+
+.search-form select .option {
+    color: #7d7d7d;
+}
+
+/*------------- add/remove icons -------------*/
 .add-remove-icons {
     margin-left: 1rem;
     width: 8rem;
@@ -25,19 +44,16 @@
 .add-remove-icons a {
     color: hotpink;
     margin-right: .4rem;
-}
-
-.form-row {
-    margin-bottom: 1rem;
-    display: flex;
+    line-height: 1.3rem;
+    vertical-align: bottom;
 }
 
 /*------------- operators -------------*/
 .operator {
     font-size: .8rem;
-    padding-right: .4rem;
     vertical-align: bottom;
-    color: #8b8b8b;
+    color: #7d7d7d;
+    padding: 0 .4rem;
 }
 
 .operator.active {
@@ -53,9 +69,18 @@
     cursor: pointer;
 }
 
+.operator-between {
+    margin: .4rem;
+}
+
+.operator.first-option {
+    border-right: 1px #d7d7d7 solid;
+}
+
 /*------------- search and cancel buttons -------------*/
 .form-actions {
     text-align: right;
+    margin-top: 2rem;
 }
 
 .form-actions Button {
@@ -67,6 +92,6 @@
 /* GO FULL WIDTH AT LESS THAN 800 PIXELS */
 @media only screen and (max-width: 800px) {
     .search-form {
-        width: 98%;
+        width: calc(98% - 4rem); /* subtracting padding */
     }
 }

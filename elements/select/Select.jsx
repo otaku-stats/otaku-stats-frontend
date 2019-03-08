@@ -6,7 +6,7 @@ import './Select.css';
 const Select = ({ onChange, options, disabled, fullWidth }) => (
     <select
         onChange={ e => onChange(e) }
-        defaultValue="Add criteria"
+        defaultValue="Choose criteria"
         disabled={ disabled }
         className={ classNames('select', fullWidth && 'full-width') }
     >
@@ -27,8 +27,8 @@ const Select = ({ onChange, options, disabled, fullWidth }) => (
 
 Select.propTypes = {
     options: PropTypes.array.isRequired,    // either 'primary' or 'secondary'
+    onChange: PropTypes.func.isRequired,    // function to execute on selecting an option
     disabled: PropTypes.bool,
-    onChange: PropTypes.func,               // function to execute on selecting an option
     fullWidth: PropTypes.bool,              // make select expand to width of container
 };
 

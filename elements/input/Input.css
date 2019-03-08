@@ -41,7 +41,7 @@
 .search-click-area:hover {
     cursor: pointer;
     transition:color .3s linear;
-    color: blue;
+    color: #2538b4;
 }
 
 .search-click-area .search-icon {

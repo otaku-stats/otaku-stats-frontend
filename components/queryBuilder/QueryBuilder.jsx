@@ -15,33 +15,33 @@ const OperatorConstants = {
 
 const queryColumns = [
     {
-        label: 'Name',
-        value: 'Name',
+        label: 'Title',
+        value: 'title',
         data_type: 'string'
     },
     {
         label: 'Description',
-        value: 'Description',
+        value: 'description',
         data_type: 'string'
     },
     {
         label: 'Genre',
-        value: 'Genre',
+        value: 'genre',
         data_type: 'string'
     },
     {
         label: 'Release Date',
-        value: 'Release Date',
+        value: 'release date',
         data_type: 'date'
     },
     {
         label: 'Min. rating',
-        value: 'Min. rating',
+        value: 'min. rating',
         data_type: 'number'
     },
     {
         label: 'Type',
-        value: 'Type',
+        value: 'type',
         options: ['TV', 'Movie'], //TODO implement an options dropdown if any column has options
         data_type: 'string'
     }
@@ -125,7 +125,7 @@ class QueryBuilder extends Component {
                             </div>
                             <div className="input-container">
                                 <Input
-                                    disabled={ expression.l_operand === '' }
+                                    // disabled={ expression.l_operand === '' }
                                     fullWidth
                                     onChange={ e => this.handleExpressionInputChange(e.target.value, 'r_operand', index) }
                                     value={ expression.r_operand }

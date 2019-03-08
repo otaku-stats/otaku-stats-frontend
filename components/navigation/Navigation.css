@@ -1,11 +1,12 @@
 nav {
     background-color: hotpink;
-    width: calc(100vw - 2rem);
+    width: calc(100% - 2rem);
     padding: 0 1rem;
     color: white;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 nav h2{
@@ -28,7 +29,7 @@ nav .little-links span {
 }
 
 nav .little-links .link:hover {
-    color: blue;
+    color: #2538b4;
     transition:color .2s linear;
 }
 

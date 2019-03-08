@@ -26,9 +26,9 @@ body {
 }
 
 .heading h1 {
-    font-size: 11rem;
+    font-size: 8vw; /* width of the font is proportional to width of the page */
     text-align: center;
-    margin: 3rem auto 0 auto;
+    margin: 1rem auto 0 auto;
 }
 
 .heading h2 {
@@ -39,9 +39,6 @@ body {
 /* for changing window size */
 /* GO FULL WIDTH AT LESS THAN 800 PIXELS */
 @media only screen and (max-width: 800px) {
-    .heading h1 {
-        font-size: 5rem;
-    }
     .heading h2 {
         font-size: 1.3rem;
     }

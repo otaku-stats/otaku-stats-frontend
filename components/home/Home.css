@@ -2,11 +2,15 @@
     flex-grow: 1;
     background-image: url("../../resources/pics/kiminonawa2.jpg");
     background-size: cover;
-    background-color: blue;
+    background-color: #2538b4;
     font-family: "Metropolis regular", "Arial";
 }
 
 .landing .heading {
     text-align: center;
     margin: 0 auto;
+}
+
+.landing .heading h2 {
+    margin-top: 0;
 }

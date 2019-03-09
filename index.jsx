@@ -17,9 +17,11 @@ render (
         <BrowserRouter>
             <div className="page-wrapper">
                 <Navigation/>
-                <Route exact path='/' component={ Home }/>
-                <Route exact path='/stats' component={ Stats }/>
-                <Route exact path='/about' component={ About }/>
+                <Route exact path='/alpha/resources/otaku-stats-site/' component={ Home }/>
+                {/* TODO fix this later to not need to all be exact, as this is surely redundant */}
+                <Route exact path='/alpha/resources/otaku-stats-site/index.html' component={ Home }/>
+                <Route exact path='/alpha/resources/otaku-stats-site/stats' component={ Stats }/>
+                <Route exact path='/alpha/resources/otaku-stats-site/about' component={ About }/>
             </div>
         </BrowserRouter>
     </Provider>

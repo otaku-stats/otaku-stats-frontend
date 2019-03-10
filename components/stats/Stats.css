@@ -1,5 +1,19 @@
 .stats-wrapper {
     flex-grow: 1;
-    background-color: #2538b4;
     font-family: "Metropolis regular", "Arial";
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-wrapper .heading {
+    background-color: #2538b4;
+    padding: .5rem;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.stats-wrapper .charts {
+    flex-grow: 1;
+    background-color: lightcyan;
+    padding: 0 1rem;
 }

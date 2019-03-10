@@ -19,12 +19,7 @@ nav .link {
     text-decoration: none;
 }
 
-nav .little-links {
-    vertical-align: bottom;
-    line-height: 3;
-}
-
-nav .little-links span {
+nav .little-links .link-name {
     margin-left: .3rem;
 }
 
@@ -38,14 +33,18 @@ nav .little-links .link {
     color: white;
     transition:color .2s linear;
     font-size: 1.2rem;
+    vertical-align: bottom;
+    line-height: 3.1;
 }
 
 /*------------- media queries -------------*/
 /* for changing window size */
 /* GO FULL WIDTH AT LESS THAN 800 PIXELS */
 @media only screen and (max-width: 800px) {
-    nav .little-links {
-        vertical-align: bottom;
-        line-height: 2.1;
+    nav .little-links .link {
+        line-height: 1.6;
+    }
+    nav .link-name {
+        display: none; /* only display icons */
     }
 }

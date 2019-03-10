@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
-import './QueryBuilder.css';
+import './SearchQueryBuilder.css';
 import Input from '../../elements/input/Input';
 import Button from '../../elements/button/Button';
 import Select from '../../elements/select/Select';
@@ -20,8 +20,8 @@ const queryColumns = [
         data_type: 'string'
     },
     {
-        label: 'Description',
-        value: 'description',
+        label: 'Synopsis',
+        value: 'synopsis',
         data_type: 'string'
     },
     {
@@ -35,8 +35,8 @@ const queryColumns = [
         data_type: 'date'
     },
     {
-        label: 'Min. rating',
-        value: 'min. rating',
+        label: 'Min. score',
+        value: 'score',
         data_type: 'number'
     },
     {
@@ -60,7 +60,7 @@ const initialState = {
     operator: OperatorConstants.AND
 };
 
-class QueryBuilder extends Component {
+class SearchQueryBuilder extends Component {
     constructor(props) {
         super(props);
         this.state = initialState;
@@ -188,4 +188,4 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps)(QueryBuilder);
+export default connect(mapStateToProps)(SearchQueryBuilder);

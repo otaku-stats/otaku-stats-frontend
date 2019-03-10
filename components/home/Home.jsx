@@ -1,7 +1,7 @@
 import React  from 'react'
 import './Home.css';
 import '../../resources/shared.css';
-import QueryBuilder from '../QueryBuilder/QueryBuilder';
+import SearchQueryBuilder from '../searchQueryBuilder/SearchQueryBuilder';
 
 const Home = () => (
     <div className="landing">
@@ -9,7 +9,7 @@ const Home = () => (
             <h1>Otaku Stats</h1>
             <h2>Discover specific anime and trends</h2>
         </div>
-        <QueryBuilder/>
+        <SearchQueryBuilder/>
     </div>
 );
 

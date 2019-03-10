@@ -13,11 +13,15 @@ const Navigation = () => (
         <div className="little-links">
             <Link to="/alpha/resources/otaku-stats-site/stats" className="link">
                 <FontAwesomeIcon icon={ faChartPie } />
-                <span>Stats</span>
+                <span className="link-name">Stats</span>
+            </Link>
+            <Link to="/alpha/resources/otaku-stats-site/" className="link">
+                <FontAwesomeIcon icon={ faSearch } />
+                <span className="link-name">Search</span>
             </Link>
             <Link to="/alpha/resources/otaku-stats-site/about" className="link">
                 <FontAwesomeIcon icon={ faInfoCircle } />
-                <span>About</span>
+                <span className="link-name">About</span>
             </Link>
         </div>
     </nav>

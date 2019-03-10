@@ -3,10 +3,11 @@ import { dispatch } from 'react-redux';
 import './Stats.css';
 import '../../resources/shared.css';
 import Select from '../../elements/select/Select';
-import {connect} from "react-redux";
+import {connect} from 'react-redux';
 import { getAnimeStats } from '../../actions/stats';
-import Button from "../../elements/button/Button";
-import { PieChart, Pie, Legend, Tooltip } from 'recharts';
+import Button from '../../elements/button/Button';
+import { PieChart, Pie, Legend, Tooltip, LineChart, Line, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { generateRandomHexColor } from '../../resources/graphColors';
 
 const currentDate = new Date();
 const timeframeOptions = [
@@ -112,7 +113,7 @@ class Stats extends Component {
     }
 
     render() {
-        const { stats, totalGenreDistribution } = this.props;
+        const { stats, totalGenreDistribution, genresPerSeason, genresList } = this.props;
 
         return (
             <div className="stats-wrapper">
@@ -156,6 +157,31 @@ class Stats extends Component {
                         </PieChart>
                     </div>
 
+                    <div className="line chart">
+                        <h3>Genre prevalence per season</h3>
+                        <LineChart
+                            width={900}
+                            height={400}
+                            data={ genresPerSeason }
+                            margin={{ top: 5, right: 5, left: 5, bottom: 5 }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="season" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            { genresList.map((genre) => {
+                                return (
+                                    <Line
+                                        key={ 'genre-' + genre }
+                                        type="monotone"
+                                        dataKey={ genre }
+                                        stroke={ generateRandomHexColor() }
+                                        activeDot={{ r: 8 }} />
+                                );
+                            }) }
+                        </LineChart>
+                    </div>
                 </div>
             </div>
         );
@@ -165,7 +191,9 @@ class Stats extends Component {
 const mapStateToProps = (state) => {
     return {
         stats: state.stats.get('animeStats'),
-        totalGenreDistribution: state.stats.get('totalGenreDistribution').toJS()
+        totalGenreDistribution: state.stats.get('totalGenreDistribution').toJS(),
+        genresPerSeason: state.stats.get('genresPerSeason').toJS(),
+        genresList: state.stats.get('genresList'), // used with ^^
     }
 };
 

@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be266e20-d09a-46ed-9535-b7e01a77f73c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/genreMapping.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/graphColors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sampleData/sampleSearchResults.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sampleData/sampleStats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/stats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation/Navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navigation/Navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation/Navigation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/queryBuilder/QueryBuilder.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/queryBuilder/QueryBuilder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/stats/Stats.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/stats/Stats.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/stats/Stats.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/stats/Stats.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reducers/stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/reducers/stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/graphColors.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/graphColors.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,34 +42,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stats.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Stats.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/stats/Stats.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="139" column="27" selection-start-line="139" selection-start-column="27" selection-end-line="139" selection-end-column="27" />
+            <state relative-caret-position="486">
+              <caret line="195" column="49" selection-start-line="195" selection-start-column="49" selection-end-line="195" selection-end-column="49" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stats.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/stats/Stats.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stats.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/actions/stats.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,17 +57,29 @@
       <file leaf-file-name="graphColors.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/graphColors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="210">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stats.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/stats/Stats.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="stats.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reducers/stats.js">
+        <entry file="file://$PROJECT_DIR$/actions/stats.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="405">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +87,17 @@
       <file leaf-file-name="sampleStats.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/sampleData/sampleStats.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="499" column="6" lean-forward="true" selection-start-line="499" selection-start-column="6" selection-end-line="499" selection-end-column="6" />
+            <state relative-caret-position="135">
+              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stats.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reducers/stats.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -133,8 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>data_type</find>
-      <find>minim</find>
       <find>&lt;select</find>
       <find>form-input</find>
       <find>Sele</find>
@@ -158,10 +147,12 @@
       <find>:</find>
       <find>,</find>
       <find>key_as_string</find>
-      <find>genres_total</find>
       <find>min-width:</find>
       <find>0, 0</find>
+      <find>genres_total</find>
       <find>querybui</find>
+      <find>graph</find>
+      <find>genreslis</find>
       <find>cx</find>
     </findStrings>
     <dirStrings>
@@ -208,11 +199,11 @@
         <option value="$PROJECT_DIR$/components/stats/genreMapping.js" />
         <option value="$PROJECT_DIR$/resources/genreMapping.js" />
         <option value="$PROJECT_DIR$/resources/sampleData/sampleStats.js" />
-        <option value="$PROJECT_DIR$/resources/graphColors.js" />
         <option value="$PROJECT_DIR$/reducers/stats.js" />
+        <option value="$PROJECT_DIR$/resources/graphColors.js" />
+        <option value="$PROJECT_DIR$/components/stats/Stats.css" />
         <option value="$PROJECT_DIR$/actions/stats.js" />
         <option value="$PROJECT_DIR$/components/stats/Stats.jsx" />
-        <option value="$PROJECT_DIR$/components/stats/Stats.css" />
       </list>
     </option>
   </component>
@@ -321,12 +312,12 @@
       <updated>1551810711594</updated>
       <workItem from="1551810720003" duration="1389000" />
       <workItem from="1551812695235" duration="417000" />
-      <workItem from="1552150159490" duration="23292000" />
+      <workItem from="1552150159490" duration="30125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78002000" />
+    <option name="totallyTimeSpent" value="84835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="697" extended-state="6" />
@@ -422,6 +413,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -616,6 +610,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/shared.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sampleData/sampleStats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/genreMapping.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -623,41 +631,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sampleData/sampleStats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="499" column="6" lean-forward="true" selection-start-line="499" selection-start-column="6" selection-end-line="499" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/graphColors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reducers/stats.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/actions/stats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/shared.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -671,20 +648,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/stats/Stats.jsx">
+    <entry file="file://$PROJECT_DIR$/resources/graphColors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="139" column="27" selection-start-line="139" selection-start-column="27" selection-end-line="139" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/stats/Stats.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actions/stats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/stats/Stats.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="195" column="49" selection-start-line="195" selection-start-column="49" selection-end-line="195" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

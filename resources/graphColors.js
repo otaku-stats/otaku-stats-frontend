@@ -11,3 +11,7 @@ export const graphColors = [
     "#41562F",
     "#BDE4A7",
 ];
+
+export const generateRandomHexColor = () => {
+    return '#'+ Math.floor(Math.random()*16777215).toString(16);
+};

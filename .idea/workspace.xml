@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be266e20-d09a-46ed-9535-b7e01a77f73c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/actions/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/searchResults/SearchResults.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/searchResults/SearchResults.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reducers/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/stats/Stats.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/stats/Stats.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/stats/Stats.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/stats/Stats.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sampleData/sampleSearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sampleData/sampleSearchResults.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -91,8 +82,8 @@
       <file leaf-file-name="Stats.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/stats/Stats.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+            <state relative-caret-position="200">
+              <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -226,7 +217,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1919" />
@@ -339,7 +330,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111032000" />
+    <option name="totallyTimeSpent" value="112573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1279" height="681" extended-state="0" />
@@ -693,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/stats/Stats.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+        <state relative-caret-position="200">
+          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>

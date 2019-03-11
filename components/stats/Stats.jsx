@@ -109,14 +109,15 @@ class Stats extends Component {
 
         // if user selected a custom timeframe, generate start and end times from that
         if (presetTimeframe === 'custom') {
-            // make a Date object out of selected start year and the month integer value of the season selected
-            startTime = Date.parse(Date(customTimes.startYr, seasonOptions.find((season) => {
+            // make a Date object out of selected start year and the month integer value of the season selected.
+            // dividing by 10000 because we were converting to milliseconds when we don't want that
+            startTime = Date.parse(new Date(customTimes.startYr, seasonOptions.find((season) => {
                 return season.value === customTimes.startSeason
-            }).intVal));
+            }).intVal))/10000;
 
-            endTime = Date.parse(Date(customTimes.endYr, seasonOptions.find((season) => {
+            endTime = Date.parse(new Date(customTimes.endYr, seasonOptions.find((season) => {
                 return season.value === customTimes.endSeason
-            }).intVal));
+            }).intVal))/10000;
         // otherwise, generate start and end times from the preset timeframe they selected
         } else {
             startTime = timeframeOptions.find((option) => { return option.value === presetTimeframe }).startTime;

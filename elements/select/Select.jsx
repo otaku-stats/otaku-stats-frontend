@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './Select.css';
+import { AppConstants } from '../../resources/AppConstants';
 
-const Select = ({ onChange, options, disabled, fullWidth }) => (
+const Select = ({ onChange, options, disabled, size, selected }) => (
     <select
         onChange={ e => onChange(e) }
-        defaultValue="Choose criteria"
+        value={ selected }
         disabled={ disabled }
-        className={ classNames('select', fullWidth && 'full-width') }
+        className={ classNames('select', size && 'size-' + size) }
     >
-        <option value="Add criteria" disabled hidden>Add criteria</option>
         { options.map((option, index) => {
             return (
                 <option
@@ -26,15 +26,18 @@ const Select = ({ onChange, options, disabled, fullWidth }) => (
 );
 
 Select.propTypes = {
-    options: PropTypes.array.isRequired,    // either 'primary' or 'secondary'
-    onChange: PropTypes.func.isRequired,    // function to execute on selecting an option
+    options: PropTypes.array.isRequired,                // either 'primary' or 'secondary'
+    onChange: PropTypes.func.isRequired,                // function to execute on selecting an option
+    selected: PropTypes.any,                            // value of the selected option (yay controlled component!)
     disabled: PropTypes.bool,
-    fullWidth: PropTypes.bool,              // make select expand to width of container
+    size: PropTypes.oneOf([AppConstants.Sizes.sm, AppConstants.Sizes.md, AppConstants.Sizes.lg,
+        AppConstants.Sizes.fill])                       // width of select
 };
 
 Select.defaultProps = {
     disabled: false,
-    fullWidth: false
+    fullWidth: false,
+    size: 'lg'
 };
 
 export default Select;

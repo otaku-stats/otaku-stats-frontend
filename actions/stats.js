@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { sampleStats } from '../resources/sampleData/sampleStats';
 import { genreMapping } from '../resources/genreMapping';
-import { generateRandomHexColor } from '../resources/graphColors';
+import { generateRandomHexColor, humanizeDate } from '../resources/helpers';
 
 export const getAnimeStats = () => {
     return (dispatch) => {
@@ -39,7 +39,7 @@ export const getAnimeStats = () => {
 
             genresPerSeason.push({
                 ...genreCounts,
-                season: season.key_as_string,
+                season: humanizeDate(season.key_as_string),
                 // for each genre, add a line to chart (genre_name: amount)
             })
         });

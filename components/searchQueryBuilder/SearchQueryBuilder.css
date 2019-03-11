@@ -27,13 +27,13 @@
 
 /*------------- add/remove icons -------------*/
 .add-remove-icons {
-    margin-left: 1rem;
+    margin-left: .75rem;
     width: 8rem;
 }
 
 .add-remove-icons a {
     color: hotpink;
-    margin-right: .4rem;
+    margin-right: .5rem;
     line-height: 1.3rem;
     vertical-align: bottom;
 }
@@ -71,10 +71,6 @@
 .form-actions {
     text-align: right;
     margin-top: 2rem;
-}
-
-.form-actions Button {
-    margin-right: .4rem;
 }
 
 /*------------- media queries -------------*/

@@ -7,6 +7,7 @@ import './SearchQueryBuilder.css';
 import Input from '../../elements/input/Input';
 import Button from '../../elements/button/Button';
 import Select from '../../elements/select/Select';
+import { AppConstants } from '../../resources/AppConstants';
 
 const OperatorConstants = {
     AND: 'AND',
@@ -48,9 +49,9 @@ const queryColumns = [
 ];
 
 const emptyExpression = {
-    l_operand: '',
+    l_operand: queryColumns[0].value,
     r_operand: '',
-    data_type: '',
+    data_type: queryColumns[0].data_type
 };
 
 const initialState = {
@@ -119,8 +120,8 @@ class SearchQueryBuilder extends Component {
                                 <Select
                                     options={ queryColumns }
                                     onChange={ e => this.handleExpressionInputChange(e.target.value, 'l_operand', index) }
-                                    defaultValue="Add criteria"
-                                    fullWidth
+                                    size={ AppConstants.Sizes.fill }
+                                    selected={ expression.l_operand }
                                 />
                             </div>
                             <div className="input-container">

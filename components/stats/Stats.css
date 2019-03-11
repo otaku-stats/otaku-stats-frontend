@@ -12,12 +12,33 @@
     text-align: center;
 }
 
+.stats-wrapper .heading .custom-timepicker {
+    margin: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stats-wrapper .heading .custom-timepicker span{
+    line-height: 2;
+}
+
 .stats-wrapper .charts {
     flex-grow: 1;
-    background-color: lightcyan;
-    padding: 0 .5rem;
+    background-color: hotpink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stats-wrapper .charts .chart h3 {
+    margin-top: 0;
+    color: #7d7d7d;
 }
 
 .stats-wrapper .charts .chart {
     margin: .5rem;
+    padding: .5rem;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }

@@ -2,10 +2,10 @@
    https://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-only-css */
 .select {
     font-family: "Metropolis", "Arial";
+    font-size: .8rem;
     color: #7d7d7d;
     padding: .33rem .5rem;
-    width: 15rem;
-    max-width: 15rem;
+    margin: 0 .25rem;
 }
 
 .select .option {
@@ -16,6 +16,15 @@
     outline: 1px hotpink solid;
 }
 
-.select.full-width {
+.select.size-sm {
+    width: 6rem;
+}
+.select.size-md {
+    width: 10rem;
+}
+.select.size-lg {
+    width: 15rem;
+}
+.select.size-fill {
     width: 100%;
 }

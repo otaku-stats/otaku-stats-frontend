@@ -1,6 +1,7 @@
 .landing {
     flex-grow: 1;
-    background-image: url("../../resources/pics/kiminonawa2.jpg");
+    background-image: url("../../resources/pics/mononoke4.png");
+    background-position: 0 25%;
     background-size: cover;
     background-color: #2538b4;
     font-family: "Metropolis regular", "Arial";

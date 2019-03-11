@@ -7,6 +7,11 @@
 
 .stats-wrapper .heading {
     background-color: #2538b4;
+    /*background-image: url("../../resources/pics/ponyo.png");*/
+    /*background-position: 0 25%;*/
+    background-image: url("../../resources/pics/ponyo2.png");
+    background-position: 0 29%;
+    background-size: cover;
     padding: .5rem;
     flex-shrink: 0;
     text-align: center;
@@ -33,7 +38,7 @@
 
 .stats-wrapper .charts .chart h3 {
     margin-top: 0;
-    color: #7d7d7d;
+    color: #707070;
 }
 
 .stats-wrapper .charts .chart {

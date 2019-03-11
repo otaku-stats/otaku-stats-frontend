@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be266e20-d09a-46ed-9535-b7e01a77f73c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/AppConstants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/helpers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/stats/Stats.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/stats/Stats.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/stats/Stats.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/stats/Stats.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/button/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/elements/button/Button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elements/input/Input.css" beforeDir="false" afterPath="$PROJECT_DIR$/elements/input/Input.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elements/select/Select.css" beforeDir="false" afterPath="$PROJECT_DIR$/elements/select/Select.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/select/Select.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/elements/select/Select.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/graphColors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pics/kiminonawa3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/shared.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/shared.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,17 +27,17 @@
       <file leaf-file-name="shared.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/shared.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            <state relative-caret-position="555">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stats.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Stats.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/stats/Stats.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+            <state relative-caret-position="1155">
+              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -54,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/resources/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
-              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -62,8 +57,8 @@
       <file leaf-file-name="Stats.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/stats/Stats.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state relative-caret-position="290">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -83,26 +78,38 @@
       <file leaf-file-name="Select.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/elements/select/Select.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="75">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Button.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elements/button/Button.css">
+      <file leaf-file-name="Home.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/home/Home.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchQueryBuilder.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SearchQueryBuilder.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="286">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Input.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elements/input/Input.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -111,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/components/home/Home.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="27" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="27" />
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -120,9 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>genres_total</find>
-      <find>graph</find>
-      <find>genreslis</find>
       <find>cx</find>
       <find>customTimeframe</find>
       <find>querybui</find>
@@ -149,6 +153,9 @@
       <find>int</find>
       <find>gettime</find>
       <find>timeframeOptions</find>
+      <find>rgba(0,0</find>
+      <find>7d7d7d</find>
+      <find>specific</find>
       <find>get sta</find>
     </findStrings>
     <dirStrings>
@@ -174,7 +181,6 @@
         <option value="$PROJECT_DIR$/webpack.config.prod.js" />
         <option value="$PROJECT_DIR$/components/about/About.css" />
         <option value="$PROJECT_DIR$/prod-dist/index.html" />
-        <option value="$PROJECT_DIR$/components/home/Home.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.jsx" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -184,7 +190,6 @@
         <option value="$PROJECT_DIR$/resources/sample data/sampleStats.js" />
         <option value="$PROJECT_DIR$/resources/sampleData/sampleSearchResults.js" />
         <option value="$PROJECT_DIR$/components/searchQueryBuilder/QueryBuilder.jsx" />
-        <option value="$PROJECT_DIR$/components/home/Home.jsx" />
         <option value="$PROJECT_DIR$/components/stats/helpers.js" />
         <option value="$PROJECT_DIR$/components/stats/genreMapping.js" />
         <option value="$PROJECT_DIR$/resources/genreMapping.js" />
@@ -192,17 +197,19 @@
         <option value="$PROJECT_DIR$/reducers/stats.js" />
         <option value="$PROJECT_DIR$/resources/graphColors.js" />
         <option value="$PROJECT_DIR$/actions/stats.js" />
-        <option value="$PROJECT_DIR$/elements/input/Input.css" />
         <option value="$PROJECT_DIR$/elements/button/Button.css" />
-        <option value="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.css" />
-        <option value="$PROJECT_DIR$/resources/shared.css" />
         <option value="$PROJECT_DIR$/resources/AppConstants.js" />
         <option value="$PROJECT_DIR$/elements/select/Select.jsx" />
         <option value="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.jsx" />
-        <option value="$PROJECT_DIR$/elements/select/Select.css" />
-        <option value="$PROJECT_DIR$/components/stats/Stats.css" />
         <option value="$PROJECT_DIR$/resources/helpers.js" />
         <option value="$PROJECT_DIR$/components/stats/Stats.jsx" />
+        <option value="$PROJECT_DIR$/resources/shared.css" />
+        <option value="$PROJECT_DIR$/components/home/Home.css" />
+        <option value="$PROJECT_DIR$/elements/select/Select.css" />
+        <option value="$PROJECT_DIR$/components/stats/Stats.css" />
+        <option value="$PROJECT_DIR$/elements/input/Input.css" />
+        <option value="$PROJECT_DIR$/components/home/Home.jsx" />
+        <option value="$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.css" />
       </list>
     </option>
   </component>
@@ -322,13 +329,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103613000" />
+    <option name="totallyTimeSpent" value="108280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1279" height="681" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1626409" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1626409" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.329806" />
@@ -529,16 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/home/Home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/stats/helpers.js" />
     <entry file="file://$PROJECT_DIR$/components/stats/genreMapping.js" />
     <entry file="file://$PROJECT_DIR$/resources/sampleData/sampleStats.js">
@@ -572,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elements/input/Input.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/elements/button/Button.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -586,24 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/home/Home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/AppConstants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -617,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elements/select/Select.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/elements/select/Select.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -634,34 +603,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/shared.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/stats/Stats.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/shared.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/home/Home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/select/Select.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/input/Input.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/stats/Stats.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        <state relative-caret-position="1155">
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/home/Home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/stats/Stats.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/searchQueryBuilder/SearchQueryBuilder.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
         </state>
       </provider>
     </entry>

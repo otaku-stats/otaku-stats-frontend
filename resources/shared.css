@@ -30,6 +30,7 @@ body {
     font-size: 8vw; /* width of the font is proportional to width of the page */
     text-align: center;
     margin: 1rem auto 0 auto;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.3), 0 6px 6px rgba(0,0,0,0.3);
 }
 
 .heading h2 {

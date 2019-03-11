@@ -1,14 +1,13 @@
 import React, { Component }  from 'react';
-import { dispatch } from 'react-redux';
+import { connect, dispatch } from 'react-redux';
 import './Stats.css';
 import '../../resources/shared.css';
-import Select from '../../elements/select/Select';
-import {connect} from 'react-redux';
 import { getAnimeStats } from '../../actions/stats';
+import Select from '../../elements/select/Select';
 import Button from '../../elements/button/Button';
 import { PieChart, Pie, Legend, Tooltip, LineChart, Line, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { generateRandomHexColor, range, calculateChartWidth } from '../../resources/helpers';
-import {AppConstants} from "../../resources/AppConstants";
+import { AppConstants } from '../../resources/AppConstants';
 
 const timeframeOptions = [
     {
@@ -132,10 +131,9 @@ class Stats extends Component {
 
     submitTimeframe(presetTimeframe) {
         const { customTimes } = this.state;
-        const { getStats } = this.props;
         const times = this.generateStartAndEndTimes(presetTimeframe, customTimes);
 
-        return getStats(times.startTime, times.endTime);
+        this.props.getStats(times.startTime, times.endTime);
     }
 
     render() {

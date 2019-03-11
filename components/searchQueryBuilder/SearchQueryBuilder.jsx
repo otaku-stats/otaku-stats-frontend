@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { connect } from 'react-redux';
+import { connect, dispatch } from 'react-redux';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
@@ -8,6 +8,7 @@ import Input from '../../elements/input/Input';
 import Button from '../../elements/button/Button';
 import Select from '../../elements/select/Select';
 import { AppConstants } from '../../resources/AppConstants';
+import { searchAnime } from '../../actions/search';
 
 const OperatorConstants = {
     AND: 'AND',
@@ -103,8 +104,8 @@ class SearchQueryBuilder extends Component {
         this.setState(initialState);
     }
 
-    searchAnime() {
-
+    onSubmitQuery(query) {
+        this.props.search(query);
     }
 
     render() {
@@ -175,7 +176,7 @@ class SearchQueryBuilder extends Component {
                     );
                 }) }
                 <div className="form-actions">
-                    <Button value="Search" type="primary" onClick={ () => this.searchAnime() }/>
+                    <Button value="Search" type="primary" onClick={ () => this.onSubmitQuery(this.state) }/>
                     <Button value="Cancel" onClick={ () => this.clearForm() }/>
                 </div>
             </form>
@@ -185,8 +186,13 @@ class SearchQueryBuilder extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        animeStats: state.stats.animeStats
+        searchResults: state.search.get('searchResults'),
+        totalResults: state.search.get('totalResults')
     }
 };
 
-export default connect(mapStateToProps)(SearchQueryBuilder);
+const mapDispatchToProps = dispatch => ({
+    search: (query) => dispatch(searchAnime(query))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchQueryBuilder);

@@ -1,0 +1,25 @@
+.search-results-wrapper {
+    flex-grow: 1;
+    font-family: "Metropolis regular", "Arial";
+    display: flex;
+    flex-direction: column;
+}
+
+.search-results-wrapper .heading {
+    background-color: #2538b4;
+    background-image: url("../../resources/pics/hunter.jpg");
+    background-position: 0 0%;
+    background-size: cover;
+    padding: .5rem;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+
+.search-results-wrapper .results {
+    flex-grow: 1;
+    background-color: hotpink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

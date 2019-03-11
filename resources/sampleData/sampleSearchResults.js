@@ -1,4 +1,4 @@
-export const sampleSearchResultsData = {
+export const sampleSearchResults = {
     "took": 13,
     "timed_out": false,
     "_shards": {
